@@ -22,7 +22,7 @@ form.addEventListener("submit", (event) => {
         );
       }
 
-      if (dividendValue < 0 || dividerValue < 0) {
+      if (dividendValue <= 0 || dividerValue <= 0) {
         throw new Error(
           "Division not performed. Invalid number provided. Try again"
         );
